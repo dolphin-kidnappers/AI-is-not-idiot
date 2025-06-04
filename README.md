@@ -101,4 +101,8 @@ AI 기반 문해력 향상 및 세대 간 소통 증진 교육 플랫폼
   - 사용자의 음성 요약 입력을 텍스트로 변환
 
 ### 4.5 클라우드 및 인프라
-... (5줄 남음)
+- **AWS / Google Cloud Platform / Microsoft Azure**  
+  - 서버 관리, 데이터 저장, AI 서비스 연동  
+  - 자동 확장(Auto Scaling) 및 로드 밸런싱  
+- **CI/CD 파이프라인 구축**  
+  - GitHub Actions, Jenkins 등으로 배포 자동화
