@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # AI-is-not-idiot
 **이해음(이해의 소리)**
 AI 기반 문해력 향상 및 세대 간 소통 증진 교육 플랫폼
@@ -103,3 +104,29 @@ AI 기반 문해력 향상 및 세대 간 소통 증진 교육 플랫폼
   - 자동 확장(Auto Scaling) 및 로드 밸런싱  
 - **CI/CD 파이프라인 구축**  
   - GitHub Actions, Jenkins 등으로 배포 자동화
+=======
+# 이해음 frontend (recat+vite)
+
+## **1. 사용 기술 / 라이브러리**
+
+- styled-components
+- react-router-dom
+- pnpm
+- react
+
+## **2. 실행 방법**
+
+### version
+
+- **node.js** v22.16.0  
+  [설치하기 ->](https://nodejs.org/ko/download)
+- **pnpm** v10.12.1  
+  -> `npm i -g pnpm`
+
+```
+git clone frontend https://github.com/dolphin-kidnappers/AI-is-not-idiot.git
+cd [clone project name]
+pnpm i
+pnpm run dev
+```
+>>>>>>> origin/frontend
