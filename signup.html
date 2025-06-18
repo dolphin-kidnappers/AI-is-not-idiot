@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+            background: linear-gradient(135deg, #e8d5ff 0%, #d4b3ff 50%, #c299ff 100%);
+        }
+
+        .card {
+            width: 600px;
+            height: 600px;
+            background: white;
+            border-radius: 1.5rem;
+            box-shadow: inset 0 2px 8px rgba(0, 0, 0, 0.15), 
+                        inset 0 1px 4px rgba(0, 0, 0, 0.1), 
+                        0 2px 8px rgba(0, 0, 0, 0.08);
+            overflow: hidden;
+        }
+
+        .card-content {
+            padding: 2rem;
+            margin: auto;
+            width: 520px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .logo {
+            text-align: center;
+        }
+
+        .logo h1 {
+            font-size: 1.5rem;
+            font-weight: 400;
+            color: black;
+        }
+
+        .title {
+            text-align: left;
+        }
+
+        .title h2 {
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: black;
+            margin-bottom: 2rem;
+        }
+
+        .form-container {
+            min-height: 280px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 1.5rem;
+        }
+
+        .input-group {
+            margin-bottom: 0.25rem;
+        }
+
+        .input-field {
+            width: 100%;
+            border: none;
+            border-bottom: 1px solid #d1d5db;
+            background: transparent;
+            padding: 0.75rem 0;
+            font-size: 1rem;
+            color: black;
+            outline: none;
+            padding-top: 2rem;
+        }
+
+        .input-field::placeholder {
+            color: #6b7280;
+        }
+
+        .input-field:focus {
+            border-bottom-color: #4b5563;
+        }
+
+        .button-container {
+            padding-top: 1rem;
+        }
+
+        .signup-button {
+            width: 100%;
+            padding: 0.75rem;
+            color: white;
+            font-weight: 500;
+            border-radius: 9999px;
+            font-size: 1rem;
+            border: none;
+            cursor: pointer;
+            background: linear-gradient(135deg, #8b5cf6 0%, #7c3aed 100%);
+        }
+
+        .signup-button:hover {
+            opacity: 0.9;
+        }
+
+        .toggle-link {
+            text-align: center;
+            padding-top: 1rem;
+        }
+
+        .toggle-link a {
+            font-size: 0.875rem;
+            color: #4b5563;
+            text-decoration: none;
+        }
+
+        .toggle-link a:hover {
+            color: #1f2937;
+        }
+
+        @media (max-width: 640px) {
+            .card {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                min-height: 500px;
+            }
+            
+            .card-content {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="card-content">
+            <div class="logo">
+                <h1>Logo</h1>
+            </div>
+
+            <div class="title">
+                <h2>회원가입</h2>
+            </div>
+
+            <div class="form-container">
+                <form>
+                    <div class="input-group">
+                        <input type="text" class="input-field" placeholder="아이디 입력해주세요" name="username" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="input-field" placeholder="비밀번호 입력해주세요" name="password" required>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" class="input-field" placeholder="비밀번호 확인" name="password_confirm" required>
+                    </div>
+
+                    <div class="button-container">
+                        <button type="submit" class="signup-button">SIGN UP</button>
+                    </div>
+                </form>
+
+                <div class="toggle-link">
+                    <a href="login.html">로그인하기</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
